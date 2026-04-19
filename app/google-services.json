@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "334008736752",
+    "project_id": "finalemobile2",
+    "storage_bucket": "finalemobile2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334008736752:android:d9e607000c0299e71c1b35",
+        "android_client_info": {
+          "package_name": "com.example.finalemobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV9NX1HPghnuIviAeDGG2G98I63YAP4JQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334008736752:android:1c032462829e76ec1c1b35",
+        "android_client_info": {
+          "package_name": "com.example.finalemobile2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV9NX1HPghnuIviAeDGG2G98I63YAP4JQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

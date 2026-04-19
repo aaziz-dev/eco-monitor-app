@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">finalemobile2</string>
+    <string name="task_name_hint">Nom de lespece</string>
+    <string name="select_date_button">Sélectionner la date limite</string>
+    <string name="latitude_hint">Latitude</string>
+    <string name="longitude_hint">Longitude</string>
+    <string name="convert_to_address_button">Convertir en adresse</string>
+    <string name="save_button">Sauvegarder</string>
+    <string name="cancel_button">Annuler</string>
+    <string name="current_date_time">Date et heure actuelles</string>
+    <string name="app_title">Liste des espèces</string>
+    <string name="current_temperature">Température actuelle : %.1f°C</string>
+    <string name="convert_to_address">Convertir en adresse</string>
+    <string name="save">Sauvegarder</string>
+    <string name="cancel">Annuler</string>
+
+    <string-array name="statut_conservation">
+        <item>en Danger critique</item>
+        <item>en danger</item>
+        <item>Vulnérable</item>
+        <item>quasi menacé</item>
+        <item>Préoccupation mineure</item>
+    </string-array>
+</resources>
+

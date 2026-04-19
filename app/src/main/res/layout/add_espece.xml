@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEspaceActivity">
+
+    <!-- Ajout de ScrollView pour le contenu scrollable -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Contenu principal dans un LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Nom de l'espèce -->
+            <TextView
+                android:id="@+id/textViewNomEspece"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'espèce"
+                android:textStyle="bold"
+                android:paddingBottom="9dp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/editTextNomEspece"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez le nom de l'espèce"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Statut de conservation -->
+            <TextView
+                android:id="@+id/textViewStatutConservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Statut de conservation"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spinnerConservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:entries="@array/statut_conservation"
+                android:spinnerMode="dropdown" />
+
+            <!-- Population estimée -->
+            <TextView
+                android:id="@+id/textViewPopulationEstimee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Population estimée"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre d'individus"
+                android:inputType="number" />
+
+            <!-- Coordonnées GPS -->
+            <TextView
+                android:id="@+id/textViewCoordonneesGPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coordonnées GPS de l'habitat"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longitude"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/buttonConvertirAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Convertir en adresse lisible"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/textViewAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adresse :"
+                android:paddingTop="16dp" />
+
+            <!-- Seuils écologiques -->
+            <TextView
+                android:id="@+id/textViewSeuilsEcologiques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seuils écologiques"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextTempMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Température maximale (°C)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTempMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Température minimale (°C)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextHumiditeMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Humidité maximale (%)"
+                android:inputType="numberDecimal" />
+
+            <!-- Notes d'observation -->
+            <EditText
+                android:id="@+id/editTextHumiditeMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Humidité minimale (%)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textViewNotesObservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes d'observation"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextNotesObservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez vos notes"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <!-- Boutons Enregistrer et Annuler -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/buttonEnregistrer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enregistrer"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/buttonAnnuler"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annuler" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
